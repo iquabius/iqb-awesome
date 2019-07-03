@@ -1,0 +1,17 @@
+#+TITLE: Awesome WM Configuration
+#+AUTHOR: Josias Duarte Busiquia
+
+* Set up Widgets
+
+** Battery Widget
+
+   Text-based battery widget: https://github.com/deficient/battery-widget
+
+   #+begin_src fish
+   cd ~/.config/awesome/deps
+   git clone https://github.com/deficient/battery-widget.git
+
+   # For instant status updates, I recommend to install the following optional dependency:
+   apt install -y acpid
+   systemctl enable acpid
+   #+end_src
